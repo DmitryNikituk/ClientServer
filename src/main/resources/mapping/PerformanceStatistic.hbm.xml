@@ -1,0 +1,20 @@
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="org.wallet.demo.domain.PerformanceStatistic" table="statistic">
+        <id column="id" name="id" type="int">
+            <generator class="increment"/>
+        </id>
+
+        <property column="numberOfCommands" name="numberOfCommands" type="int"/>
+        <property column="miTime" name="minTime" type="long"/>
+        <property column="maTime" name="maxTime" type="long"/>
+        <property column="avTime" name="avgTime" type="long"/>
+        <property column="minute" name="minute" type="int"/>
+
+    </class>
+</hibernate-mapping>
+
+
